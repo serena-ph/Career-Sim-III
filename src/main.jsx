@@ -9,6 +9,7 @@ import ProfilePage from './Pages/ProfilePage'
 import Nav from './Components/Nav'
 import HomePost from './Map/AllPost'
 import SinglePost from './Map/SinglePost'
+import SearchBar from './Components/SearchBar'
 // import SearchBar from './Components/SearchBar'
 
 
@@ -17,7 +18,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <BrowserRouter>
     <Provider store ={store}>
       <Nav/>
-      {/* <SearchBar/> */}
+      <SearchBar/>
       <Routes>
       <Route path={"/posts"} element={<HomePost/>}/>
         <Route path={"/"} element={<HomePage/>}/>

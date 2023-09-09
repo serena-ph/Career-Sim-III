@@ -6,6 +6,7 @@ export default function Nav (){
             <Link to ={"/posts"}>All Posts</Link>
             <Link to ={"/profile"}>Profile</Link>
         </nav>
+        
 
     )
 }
