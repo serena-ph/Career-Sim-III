@@ -18,7 +18,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <BrowserRouter>
     <Provider store ={store}>
       <Nav/>
-      <SearchBar/>
       <Routes>
       <Route path={"/posts"} element={<HomePost/>}/>
         <Route path={"/"} element={<HomePage/>}/>
