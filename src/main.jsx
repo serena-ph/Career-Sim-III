@@ -7,8 +7,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import HomePage from './Pages/HomePage'
 import ProfilePage from './Pages/ProfilePage'
 import Nav from './Components/Nav'
-import HomePost from './Map/AllPost'
-import SinglePost from './Map/SinglePost'
+import HomePost from './Page/AllPost'
+import SinglePost from './Page/SinglePost'
 import SearchBar from './Components/SearchBar'
 // import SearchBar from './Components/SearchBar'
 
@@ -23,6 +23,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path={"/posts"} element={<HomePost/>}/>
         <Route path={"/"} element={<HomePage/>}/>
         <Route path={"/profile"} element={<ProfilePage/>}/>
+        <Route path = {"/single/:id"} element ={<SinglePost/>}/>
       </Routes>
     </Provider>
     </BrowserRouter>
